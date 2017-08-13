@@ -154,25 +154,12 @@ geit: #8ABFD0
   .show {
     display:block;
   }
+ /* End dropdown box */
 
 /*** Navigation path ***/
   .nav-path {
-    font-style: italic;
-    font-weight: 900;
-    position: absolute;
-    top: -2px;
-    left: 60px;
+    display: none;
   }
-  .nav-path a {
-    color: black;
-    padding: 0px 2px 0px 2px;
-    text-decoration: none;
-    display: inline-block;
-  }
-  .nav-path a:hover {
-    color: #e4bd32;
-  }
-  /* End dropdown box */
 
   /* Non-mobile, grid */
   @media only screen and (min-width: 600px) {
@@ -186,6 +173,26 @@ geit: #8ABFD0
     .home-nav-background {
       max-width: 500px;
       max-height: 380px;
+    }
+
+    /*** Navigation path ***/
+    /* only show on larger screen */
+    .nav-path {
+      display: inherit;
+      font-style: italic;
+      font-weight: 900;
+      position: absolute;
+      top: -2px;
+      left: 60px;
+    }
+    .nav-path a {
+      color: black;
+      padding: 0px 2px 0px 2px;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .nav-path a:hover {
+      color: #e4bd32;
     }
   }
 
