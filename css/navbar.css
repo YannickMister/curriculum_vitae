@@ -9,7 +9,7 @@ red: #d52b0a
 geit: #8ABFD0
 */
 
-  /*** General navigation bar ***/
+/*** General navigation bar ***/
   header {
     font-family: 'Lora', serif;
     position:relative;
@@ -57,7 +57,7 @@ geit: #8ABFD0
     background-image: url("images/LogoYM_fat_white.png");
   }
 
-  /*** Menu Button ***/
+/*** Menu Button ***/
   .menubtn {
     position: absolute;
     background-image: url("images/menu_btn_black.png");
@@ -157,14 +157,16 @@ geit: #8ABFD0
  /* End dropdown box */
 
 /*** Navigation path ***/
+/* don't show on small screen */
   .nav-path {
     display: none;
   }
 
   /* Non-mobile, grid */
   @media only screen and (min-width: 600px) {
-    header {
-      border-bottom: 2px solid black;
+  	header {
+      position:fixed;
+      top: 0px;
     }
     .homebtn {
       max-width: 250px;
@@ -193,6 +195,7 @@ geit: #8ABFD0
     }
     .nav-path a:hover {
       color: #e4bd32;
+      text-decoration: none;
     }
   }
 
